@@ -1,0 +1,220 @@
+/* Courses Page Specific Styles */
+.courses-page {
+    padding-top: 80px;
+}
+
+.course-header {
+    background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(30, 64, 175, 0.9));
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.course-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.course-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Course Detail Sections */
+.course-detail {
+    padding: 4rem 5%;
+    border-bottom: 1px solid #eee;
+}
+
+.course-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-info h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.course-info h2 i {
+    color: var(--primary-color);
+}
+
+.course-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.course-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.course-meta i {
+    color: var(--primary-color);
+}
+
+.course-description h3 {
+    color: var(--text-color);
+    margin: 2rem 0 1rem;
+    font-size: 1.5rem;
+}
+
+.course-description p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.course-description ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.course-description ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.course-description ul li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Course CTA Section */
+.course-cta {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 100px;
+}
+
+.price {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.price .amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.price .period {
+    color: #666;
+}
+
+.enroll-button {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.features {
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+
+.features p {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.features i {
+    color: #22c55e;
+}
+
+/* Enrollment Form Section */
+.enrollment-section {
+    background-color: var(--light-bg);
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.enrollment-section h2 {
+    margin-bottom: 2rem;
+}
+
+.enrollment-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group select {
+    background-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .course-content {
+        grid-template-columns: 1fr;
+    }
+
+    .course-cta {
+        position: static;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-header h1 {
+        font-size: 2rem;
+    }
+
+    .course-meta {
+        gap: 1rem;
+    }
+
+    .course-info h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Active Navigation Link */
+.nav-links a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+} 

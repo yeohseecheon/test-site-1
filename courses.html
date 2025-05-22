@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - ITVersity</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">ITVersity</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="#" class="active">Courses</a></li>
+                <li><a href="index.html#locations">Locations</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="courses-page">
+        <section class="course-header">
+            <h1>Our Courses</h1>
+            <p>Transform your career with our industry-focused training programs</p>
+        </section>
+
+        <section id="python" class="course-detail">
+            <div class="course-content">
+                <div class="course-info">
+                    <h2><i class="fab fa-python"></i> Python for Beginners</h2>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> Duration: 8 weeks</span>
+                        <span><i class="fas fa-level-up-alt"></i> Level: Beginner</span>
+                        <span><i class="fas fa-users"></i> Batch Size: 20 students</span>
+                    </div>
+                    <div class="course-description">
+                        <h3>Course Overview</h3>
+                        <p>Start your programming journey with Python, one of the most popular and versatile programming languages. This course is designed for absolute beginners and will give you a strong foundation in programming concepts.</p>
+                        
+                        <h3>What You'll Learn</h3>
+                        <ul>
+                            <li>Python basics and syntax</li>
+                            <li>Variables, data types, and operators</li>
+                            <li>Control structures and loops</li>
+                            <li>Functions and modules</li>
+                            <li>Object-oriented programming basics</li>
+                            <li>File handling and basic I/O</li>
+                            <li>Error handling and debugging</li>
+                            <li>Basic data structures</li>
+                        </ul>
+
+                        <h3>Prerequisites</h3>
+                        <ul>
+                            <li>Basic computer knowledge</li>
+                            <li>No prior programming experience required</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-cta">
+                    <div class="price">
+                        <span class="amount">$499</span>
+                        <span class="period">/ course</span>
+                    </div>
+                    <a href="#enroll" class="enroll-button">Enroll Now</a>
+                    <div class="features">
+                        <p><i class="fas fa-check"></i> Live online sessions</p>
+                        <p><i class="fas fa-check"></i> Hands-on projects</p>
+                        <p><i class="fas fa-check"></i> Certificate upon completion</p>
+                        <p><i class="fas fa-check"></i> Career guidance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="data-engineering" class="course-detail">
+            <div class="course-content">
+                <div class="course-info">
+                    <h2><i class="fas fa-database"></i> Data Engineering Essentials</h2>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> Duration: 12 weeks</span>
+                        <span><i class="fas fa-level-up-alt"></i> Level: Intermediate</span>
+                        <span><i class="fas fa-users"></i> Batch Size: 15 students</span>
+                    </div>
+                    <div class="course-description">
+                        <h3>Course Overview</h3>
+                        <p>Master the essential skills needed to become a successful Data Engineer. Learn to design, build, and maintain data pipelines and infrastructure that transform raw data into valuable insights.</p>
+                        
+                        <h3>What You'll Learn</h3>
+                        <ul>
+                            <li>Data warehouse concepts and design</li>
+                            <li>ETL processes and tools</li>
+                            <li>SQL and database management</li>
+                            <li>Big data technologies (Hadoop, Spark)</li>
+                            <li>Data modeling and architecture</li>
+                            <li>Cloud platforms (AWS, Azure)</li>
+                            <li>Data pipeline development</li>
+                            <li>Data quality and testing</li>
+                        </ul>
+
+                        <h3>Prerequisites</h3>
+                        <ul>
+                            <li>Basic programming knowledge</li>
+                            <li>Understanding of SQL basics</li>
+                            <li>Familiarity with databases</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-cta">
+                    <div class="price">
+                        <span class="amount">$999</span>
+                        <span class="period">/ course</span>
+                    </div>
+                    <a href="#enroll" class="enroll-button">Enroll Now</a>
+                    <div class="features">
+                        <p><i class="fas fa-check"></i> Live online sessions</p>
+                        <p><i class="fas fa-check"></i> Real-world projects</p>
+                        <p><i class="fas fa-check"></i> Industry certification</p>
+                        <p><i class="fas fa-check"></i> Job placement assistance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="enroll" class="enrollment-section">
+            <h2>Ready to Start Your Journey?</h2>
+            <div class="enrollment-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Course</option>
+                            <option value="python">Python for Beginners</option>
+                            <option value="data-engineering">Data Engineering Essentials</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Any questions or comments?" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Request Information</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ITVersity, Inc</h3>
+                <p>Empowering careers through education</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="#python">Python Course</a></li>
+                    <li><a href="#data-engineering">Data Engineering Course</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="copyright-year"></span> ITVersity, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
